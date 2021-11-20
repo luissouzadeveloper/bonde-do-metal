@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*Fontes*/
+@font-face {
+    font-family: Metal;
+    src: url(../fontes/RINGM___.TTF);
+}
+
+/*Área de variáveis css*/
+:root{
+    --cor1: #000000;
+    --cor2: #212121;
+    --cor3: #ffffff;
+    --cor4: #e6e6e6;
+    --cor5: #838383;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-metal: 'Metal';
+}
+
+body{
+    background-image: linear-gradient(to bottom, var(--cor4), var(--cor5));
+    font-size: 1.3em;
+}
+
+/*Cabeçalho*/
+header{
+    background-color: var(--cor1);
+    height: 120px;
+}
+
+header > a > img{
+    position: relative;
+    display: block;
+    margin: auto auto;
+    top: 10px;
+}
+
+/*Menu*/
+nav{
+    background-color: var(--cor2);
+    padding: 7px;
+    text-align: center;
+    box-shadow: 2px 2px 10px black;
+}
+
+/*Itens*/
+nav > a{
+    text-decoration: none;
+    color: var(--cor3);
+    margin: 8px;
+    transition: 1s;
+}
+
+nav > a:hover{
+    text-decoration: underline;
+    background-color: var(--cor4);
+    color: var(--cor2);
+}
+
+/*Corpo principal*/
+main{
+    max-width: 430px;
+    background-color: var(--cor2);
+    margin: 20px auto;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px black;
+}
+
+/*Seção*/
+main > section{
+    margin: 20px auto;
+    padding: 5px;
+}
+
+/*Título da seção*/
+section > h1{
+    font-family: var(--fonte-metal);
+    color: var(--cor3);
+    padding: 5px;
+    margin: 10px;
+}
+
+/*Subtítulo da seção*/
+section > h2{
+    font-family: var(--fonte-metal);
+    color: var(--cor3);
+    padding: 5px;
+    margin: 5px;
+}
+
+/*Icones da seção*/
+.icons{
+    margin: auto;
+    background-color: var(--cor2);
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px black;
+}
+
+/*Parágrafo da seção*/
+section > p{
+    font-family: var(--fonte-padrao);
+    background-color: var(--cor3);
+    margin: 15px;
+    padding: 10px;
+    max-width: 430px;
+    border-radius: 5px;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+/*Rodapé*/
+footer{
+    background-color: var(--cor1);
+    padding: 4px;
+    box-shadow: 2px 2px 10px black;
+}
+
+footer > p{
+    font-family: var(--fonte-metal);
+    color: var(--cor3);
+    padding: 5px;
+    text-align: center;
+}
+
+/*Tamanhos de tela*/
+/*Tablet*/
+@media (min-width: 768px) {
+
+/*Itens*/
+nav > a{
+    text-decoration: none;
+    color: var(--cor3);
+    margin: 80px;
+}
+
+/*Corpo principal*/
+main{
+    max-width: 750px;
+    background-color: var(--cor2);
+    margin: 20px auto;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px black;
+}
+
+/*Parágrafo da seção*/
+section > p{
+    font-family: var(--fonte-padrao);
+    background-color: var(--cor3);
+    margin: 15px;
+    padding: 10px;
+    max-width: 750px;
+    border-radius: 5px;
+    text-align: justify;
+}
+}
+
+/*Notebooks e TV's*/
+@media (min-width: 1024px){
+
+/*Itens*/
+nav > a{
+    text-decoration: none;
+    color: var(--cor3);
+    margin: 110px;
+}
+
+/*Corpo principal*/
+main{
+    max-width: 1000px;
+    background-color: var(--cor2);
+    margin: 20px auto;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px black;
+}
+
+/*Parágrafo da seção*/
+section > p{
+    font-family: var(--fonte-padrao);
+    background-color: var(--cor3);
+    margin: 15px;
+    padding: 10px;
+    max-width: 1000px;
+    border-radius: 5px;
+    text-align: justify;
+}
+}
